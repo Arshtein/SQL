@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Изменение"
+             x:Class="SQL.Pages.UpdatePage">
+    
+    <StackLayout>
+        <Editor x:Name="Text" FontSize="25" AutoSize="TextChanges" IsEnabled="False"/>
+        <Button x:Name="Upd" Font="25" Text="Сохранить" VerticalOptions="EndAndExpand" IsEnabled="False" Clicked="udClick"/>
+    </StackLayout>
+</ContentPage>

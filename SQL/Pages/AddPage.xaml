@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Добавление" 
+             x:Class="SQL.Pages.AddPage">
+    <StackLayout>
+        <Editor x:Name="Text" Text="{Binding Content}" FontSize="25" Placeholder="Текст заметки" AutoSize="TextChanges" TextChanged="tChange"/>
+        <Button x:Name="Clear" Clicked="ClearText" FontSize="25" Text="Очистить" IsEnabled="False"/>
+        <Button x:Name="Add" Clicked="AddNote" FontSize="25" Text="Добавить" VerticalOptions="EndAndExpand" IsEnabled="False"/>
+    </StackLayout>
+</ContentPage>
